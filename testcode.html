@@ -1,0 +1,259 @@
+import React, { Component } from 'react';
+import app from './App.css'; 
+import ReactDOM from 'react-dom';
+import {
+  BrowserRouter as  Router,Switch,Route,Link}
+
+// import { Router, Rout, IndexRoute, browserHistory } from 'react-router';
+// import Todoitem from './Todoitem';
+// import Contactcard from './Contactcard';
+// // import ProductsData from './VshoolData';
+// import ProductData from './VschoolData'
+// import Product from './Product';
+// import thunk from 'redux-thunk';
+// import Header from './component/Header'
+// import List from './List';
+
+
+// // function  App() {
+
+
+
+// // const productComp=ProductData.map(item=><Product  key={item.id}  Product={item} />)
+// //    console.log(productComp)
+     
+// // class component 
+
+
+// class App extends React.Component
+// {
+
+//   constructor(props) {
+//     super(props);
+//     this.state = {value: ''};
+
+//     this.handleChange = this.handleChange.bind(this);
+//   }
+
+//   handleChange(event) {
+//     this.setState({value: event.target.value});
+
+  
+
+  
+
+  
+//   }
+//   display(){
+//     return(
+//       <div>
+//                 <List  data={this.state.value}  />
+
+//       </div>
+//     )
+//   }
+  
+
+//   // display(){
+    
+//   // <h2>{this.state.value}</h2>
+//   // }
+
+//   // handleSubmit(event) {
+//   //   alert('A name was submitted: ' + this.state.value);
+//   //   event.preventDefault();
+//   // }
+
+//   render() {
+//     return (
+//       <div>
+//         <label>
+//           Name:
+//           <input type="text" value={this.state.value} onChange={this.handleChange} />
+//         </label>
+
+//         <button onClick={this.display}>add</button>
+//              {this.display}; 
+      
+//         </div>
+//     );
+//   }
+
+// }
+
+
+// export default App;
+
+
+// import React, { Component } from 'react';
+// import { useState } from 'react';
+// import ReactDom from 'react-dom';
+// import  app from './App.css'
+
+// class  App extends  Component{
+//   constructor(props){
+//     super(props)
+//     this.state={
+//       value:"",
+//       name:"",
+//       email:"",
+//        img:"",
+//        imageUrl:"",
+//        file: null,
+      
+//     }
+//     this.set_name=this.set_name.bind(this);
+//     this.handleChange = this.handleChange.bind(this)
+
+//   }
+//   set_name(event){
+//     // console.log(this.state.name);
+//     this.setState({
+//       name:this.state.value,
+//       // email:"syualehfseeh123@gmail.com"
+//       email:this.state.img,
+//       file: URL.createObjectURL(event.target.files[0])
+      
+//     })
+//   }
+//   handleChange(event) {
+//     this.setState({
+      
+
+//     })
+//   }
+  
+  
+//   render(){
+//     return(
+//       <>
+//       <div className="card">
+//         {/* <img src={this.state.imageUrl} alt="" width="200"/> */}
+
+    
+//       <input type="text"   placeholder="enter title"   id="val"  onChange={(e)=>{
+//         this.setState({
+//           value:e.target.value
+//         })
+//       }}  />
+       
+
+
+
+     
+      
+//       <input type="text" src="" alt="" onChange={(ev)=>{
+//       this.setState({
+//         img:ev.target.value
+//       })
+// }} />
+//      <input type="file" onChange={this.set_name}/>
+//       <button  onClick={this.set_name}   className="" >set name </button>
+
+      
+      
+      
+
+//       </div>
+
+//       <div className="my_card">
+      
+    
+
+
+
+
+//       </div>
+      
+//       </>
+
+//     )
+//   }
+// }
+// import List from './List';
+// import Display from './Display';
+// import Image from './images/-364136079.jpg'
+
+
+// life cycle method  in react
+// class App extends Component{
+//   constructor(props){
+//    super(props)
+//    this.state={
+//      name:"sualeh",
+
+//    }
+//   }
+//   componentDidMount(){
+//     //  if I have to get data that this method is
+//     // working 
+//   }
+   
+//   UNSAFE_componentWillReceiveProps(nextProps){
+//     // get the props to the child
+//   //  do somwthing important here 
+//   }
+
+//   shouldComponentUpdate(){
+    
+//   }
+//   render(){
+//     return(
+//       <div>
+//         {this.state.name}
+//       </div>
+//     )
+//   }}
+// import {Container, Row, Col, Card, Form, Button } from "react-bootstrap";
+// import { withRouter } from "react-router";
+// import Sidebar from "./Display";
+// import './App.css'
+// const Dash = props => {
+   
+
+//     return (
+//         <>
+//          <Container fluid>
+//                 <Row>
+//                     <Col xs={2} id="sidebar-wrapper">      
+//                       <Sidebar />
+//                     </Col>
+//                     <Col  xs={10} id="page-content-wrapper">
+//                         this is a test
+//                     </Col> 
+//                 </Row>
+
+//             </Container>
+//         </>
+//         );
+//   };
+//   const Dashboard = withRouter(Dash);
+//   export default Dashboard
+
+// import Navbar from './component/Navbar';
+export default function BasicExample(){
+    return(
+        <div className="App">
+           <Router>
+             <div>
+               <ul>
+                 <li><link to="">Home</link></li>
+                 <li><link to="">About Us</link></li>
+                 <li><link to="">Dashboard</link></li>
+               </ul>
+             </div>
+             <hr/>
+             {/*
+          A <Switch> looks through all its children <Route>
+          elements and renders the first one whose path
+          matches the current URL. Use a <Switch> any time
+          you have multiple routes, but you want only one
+          of them to render at a time
+        */}
+        <Switch></Switch>
+           </Router>
+        </div>
+    )
+}
+
+ App;
